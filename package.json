@@ -1,0 +1,18 @@
+{
+  "name": "birdy",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "npm run dev --workspace=client & npm run start --workspace=server",
+    "start-client": "npm run dev --workspace=client",
+    "start-server": "npm run dev --workspace=server",
+    "build": "npm run build --workspace=client && npm run build --workspace=server"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

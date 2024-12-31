@@ -16,7 +16,7 @@ const sequelize = new Sequelize(
   {
     host: "localhost",
     dialect: "postgres",
-    logging: console.log, //TODO turn off logging or toggle from .env
+    logging: console.log,
   }
 );
 
